@@ -1,0 +1,11 @@
+main p {
+    color: blue; 
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header p {
+    color:aqua;
+    background-color:blueviolet;
+    font-weight: bold;
+}
