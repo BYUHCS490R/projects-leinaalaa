@@ -1,0 +1,21 @@
+main { 
+    font-size: 15px;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1f4fa8;
+    background-color: #2596b3;
+}
+
+.emphasis {
+    color: #041014;
+}
+
+#deemphasis {
+    color: #145369;
+}
+
+.bolder {
+    font-weight: bold;
+}
