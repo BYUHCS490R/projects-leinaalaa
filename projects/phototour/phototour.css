@@ -1,0 +1,22 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #c491b6;
+    background-image: url(blue.jpg);
+}
+
+nav a {
+    color: white;
+}
+
+.list {
+    list-style-image: url(flower.png);
+}
+
+.decorative {
+    min-height: 200px;
+    background: url(kauai.jpg) no-repeat bottom right;
+}
+
+.current {
+    color: #cbb8fa;
+}
