@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightslategray;
+    line-height: 1.6;
+}
+
+#wrapped {
+    width: 900px;
+    min-height: 600px;
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border: thin solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px black;
+}
+
+nav a {
+    display: inline-block;
+    background-color: cadetblue;
+    color: white;
+    padding: 5px;
+    border-bottom: thin solid white;
+    margin: 5px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: white;
+    color: cadetblue;
+}
+
+main p {
+    background-color: cadetblue;
+    color: white;
+    width: 250px;
+    font-size: 16px;
+    font-style: italic;
+    text-align: left;
+    padding: 15px;
+}
+
+.float-right {
+    float: right;
+    margin: 10px;
+}
+
+figure img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+header {
+    background-image: url("map.jpg");
+    background-origin: padding-box;
+    background-clip: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px gray;
+}
