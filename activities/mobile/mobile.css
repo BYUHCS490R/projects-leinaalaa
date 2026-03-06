@@ -30,7 +30,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    background-color: blue;
+    background-color: white;
 }
 
 .row {
@@ -68,4 +68,38 @@ nav a:hover {
 
 .cardfig img {
     width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin-top: 200px;
+    }
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        border-bottom: thin solid white;
+    }
+
+    .main-row {
+        flex-direction: column-reverse;
+    }
+
+    .row {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    
+    .card {
+        width: 95%;
+    }
+
+    .main-card {
+        order: -1;
+    }
+}
+
+@media print {
+    
 }
