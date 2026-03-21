@@ -12,19 +12,21 @@
     </header>
     <main>
         <form action="formprocs.html" method="post">
-            <div>
+            <fieldset>
+                <legend>Sign Up</legend>
+            <div class="form-row">
                 <label for="fname">Name:</label>
                 <input type="text" name="fullname" id="fname" required>
             </div>
-            <div>
+            <div class="form-row">
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" placeholder="email@gmail.com">
             </div>
-            <div>
+            <div class="form-row">
                 <label for="password">Password:</label>
                 <input type="password" name="pass" id="password">
             </div>
-            <div>
+            <div class="form-row">
                 <label for="state">State:</label>
                 <select name="state" id="state">
                     <option value="blank">Select a state</option>
@@ -33,23 +35,28 @@
                     <option value="NY">New York</option>
                 </select>
             </div>
-            <div>
-                Gender:
+            <div class="check-row">
+                <div class="spacer">Gender:</div>
                 <label><input type="radio" name="gender" value="male"> Male</label>
                 <label><input type="radio" name="gender" value="female"> Female</label>
             </div>
-            <div>
+            <div class="check-row">
+                <div class="spacer"></div> 
                 <label><input type="checkbox" name="remember" value="male" checked> Remember me?</label>
             </div>
-            <div>
+            <div class="form-row">
+                <div class="spacer"></div>
                 <input type="submit" value="Sign Up">
             </div>
+            </fieldset>
         </form>
         <h2>Questions</h2>
         <ol>
             <li>The form tag has an "action" attribute. What does it do? It tells the form where to send the data when submitted.</li>
             <li>The form tag has a "method" attribute. What does it do? It tells the form how the data should be sent to the server.</li>
             <li>What is the difference between a "POST" and a "GET"? POST is when something changes, GET is when you search or retrieve data.</li>
+            <li>What are different ways to style your form? You can use CSS to style your form elements, including colors, fonts, and layout.</li>
+            <li>How does flex help for both Desktop and Mobile phones? Flex makes it  easier to create layouts that adapt to different screen sizes.</li>
         </ol>
     </main>
     <footer>
