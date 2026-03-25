@@ -11,11 +11,11 @@
         <h1>Leinaala's Web Design Site</h1>
     </header>
     <main>
-        <form action="formprocs.html" method="post">
+        <form action="formprocs.html" method="post" id="myform">
             <fieldset>
                 <legend>Sign Up</legend>
             <div class="form-row">
-                <label for="fname">Name:</label>
+                <label for="fname">Full name:</label>
                 <input type="text" name="fullname" id="fname" required>
             </div>
             <div class="form-row">
@@ -57,10 +57,44 @@
             <li>What is the difference between a "POST" and a "GET"? POST is when something changes, GET is when you search or retrieve data.</li>
             <li>What are different ways to style your form? You can use CSS to style your form elements, including colors, fonts, and layout.</li>
             <li>How does flex help for both Desktop and Mobile phones? Flex makes it  easier to create layouts that adapt to different screen sizes.</li>
+            <li>What is JavaScript? How did it get its name? JavaScript is a programming language that is used to create interactive web pages. It was originally called LiveScript but was renamed to JavaScript.</li>
+            <li>What are the two ways you can run JavaScript? You can run JavaScript in the browser or on the server using Node.js.</li>
+            <li>What was the most popular front-end js library? jQuery was the most popular front-end JavaScript library for many years.</li>
+            <li>What is the most popular front-end js library today? React is currently the most popular front-end JavaScript library.</li>
         </ol>
     </main>
     <footer>
         <p>&copy; 2026 Leinaala Akaka</p>
     </footer>
+    <script>
+        document.getElementById('myform').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+           // alert('Form submitted!');
+
+           const fname = document.getElementById('fname').value;
+           const email = document.getElementById('email').value;
+           const password = document.getElementById('password').value;
+           const state = document.getElementById('state').value;
+
+           if (!fname || !email) {
+            alert("You need a name and email.");
+            return;
+           }
+
+           if (!password) {
+            alert("You need a password.");
+            return;
+           }
+
+           const formData = {
+            name: fname,
+            email: email,
+            password: password,
+            state: state
+           };
+
+            console.log(formData);
+        });
+    </script>
 </body>
 </html>
