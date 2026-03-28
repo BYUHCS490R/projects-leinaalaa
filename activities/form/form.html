@@ -11,6 +11,7 @@
         <h1>Leinaala's Web Design Site</h1>
     </header>
     <main>
+        <div id="message"></div>
         <form action="formprocs.html" method="post" id="myform">
             <fieldset>
                 <legend>Sign Up</legend>
@@ -61,40 +62,13 @@
             <li>What are the two ways you can run JavaScript? You can run JavaScript in the browser or on the server using Node.js.</li>
             <li>What was the most popular front-end js library? jQuery was the most popular front-end JavaScript library for many years.</li>
             <li>What is the most popular front-end js library today? React is currently the most popular front-end JavaScript library.</li>
+            <li>What is AJAX? AJAX is a technique used in web development that lets a webpage send and receive data from a server without reloading the page.</li>
+            <li>Why do you put your JS Code in a separate file? Putting JavaScript code in a separate file helps keep the HTML file clean and organized, you can use the same JS file across multiple pages, and it allows the browser to cache the file for better performance.</li>
         </ol>
     </main>
     <footer>
         <p>&copy; 2026 Leinaala Akaka</p>
     </footer>
-    <script>
-        document.getElementById('myform').addEventListener('submit', function(event) {
-            event.preventDefault(); 
-           // alert('Form submitted!');
-
-           const fname = document.getElementById('fname').value;
-           const email = document.getElementById('email').value;
-           const password = document.getElementById('password').value;
-           const state = document.getElementById('state').value;
-
-           if (!fname || !email) {
-            alert("You need a name and email.");
-            return;
-           }
-
-           if (!password) {
-            alert("You need a password.");
-            return;
-           }
-
-           const formData = {
-            name: fname,
-            email: email,
-            password: password,
-            state: state
-           };
-
-            console.log(formData);
-        });
-    </script>
+    <script src="form.js"></script>
 </body>
 </html>
