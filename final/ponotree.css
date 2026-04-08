@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header, footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #388e3c;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #2e7d32;
+}
+
+.active {
+    background-color: #1b5e20;
+}
+
+.container {
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.gallery img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-row {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+fieldset {
+    border: 2px solid #2e7d32;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+input, select, textarea {
+    padding: 5px; 
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    
+    nav a {
+        border-top: 1px solid white;
+    }
+}
