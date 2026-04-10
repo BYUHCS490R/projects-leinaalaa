@@ -33,11 +33,7 @@ nav a:hover {
 
 .container {
     padding: 20px;
-}
-
-img {
-    width: 100%;
-    max-width: 400px;
+    overflow: auto;
 }
 
 table {
@@ -55,9 +51,16 @@ caption {
     margin-bottom: 10px;
 }
 
-.gallery img {
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img,
+.gallery video {
     width: 400px;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
     margin: 10px;
 }
@@ -107,6 +110,21 @@ input, select, textarea {
     width: 100%;
 }
 
+.about-img {
+    float: right;
+    margin: 0 0 10px 15px;
+    max-width: 300px;
+    width: 100%;
+
+}
+
+.home-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px auto;
+}
+
 @media (max-width: 600px) {
     nav {
         flex-direction: column;
@@ -114,5 +132,20 @@ input, select, textarea {
     
     nav a {
         border-top: 1px solid white;
+    }
+
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-row label {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    button {
+        width: 100%;
     }
 }
